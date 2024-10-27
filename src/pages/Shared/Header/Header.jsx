@@ -2,7 +2,7 @@
 
 function Header() {
   return (
-    <div>Header</div>
+    <div className="text-4xl">Header</div>
   )
 }
 
