@@ -2,6 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+.color{
+  @apply text-[#B64A02]
+}
+.container-box{
+  @apply max-w-full md:w-11/12 lg:p-2 mx-auto
+}
+.active{
+  @apply text-[#B64A02] font-bold
+}
+.title{
+  @apply text-center text-3xl md:text-6xl font-bold color
+}
+.paragraph{
+  @apply text-center text-gray-500 my-5
+}
+
+
+@layer utilities{
+  .button-primary{
+    @apply bg-[#B64A02] text-white rounded-xl transition duration-150
+  }
+
+  .button-secondary{
+    @apply bg-white border border-[#B64A02] text-black rounded-xl
+    transition duration-150 
+  }
+}
+
+
 @layer base{
   body{
     font-family: "Lora", serif;
